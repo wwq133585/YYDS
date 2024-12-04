@@ -14,6 +14,7 @@
 # TV
   - DOMAIN-SUFFIX,speedtest.cn
   - DOMAIN,ottsdk.itv.video
+  - DOMAIN,www.czzyvideo.com
 
 # 公共 NTP 服务
   - DOMAIN-SUFFIX,ntp.org
