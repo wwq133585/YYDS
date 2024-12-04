@@ -46,7 +46,7 @@ domainYaml: &domainYaml {type: http, interval: 86400, behavior: domain, format: 
 IPcidrMrs: &IPcidrMrs {type: http, interval: 86400, behavior: ipcidr, format: mrs}
 IPcidrText: &IPcidrText {type: http, interval: 86400, behavior: ipcidr, format: text}
 ClassicalText: &ClassicalText {type: http, interval: 86400, behavior: classical, format: text}
-ClassicalYaml: &ClassicalText {type: http, interval: 86400, behavior: classical, format: yaml}
+ClassicalYaml: &ClassicalYaml {type: http, interval: 86400, behavior: classical, format: yaml}
 ############################################## - ⚓️ 锚点区结束 - ############################################## 
 
 # 远程订阅组
