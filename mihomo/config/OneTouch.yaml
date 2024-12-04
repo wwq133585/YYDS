@@ -108,7 +108,7 @@ proxy-groups:
   - {name: 美国自动,      <<: *UrlTest, filter: *FilterUS, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png}
 
 rule-providers: 
-  XPTV:                 {type: http, interval: 86400, behavior: domain, format: yaml, url: https://ghp.ci/https://github.com/666OS/YYDS/raw/main/mihomo/rules/XPTV.yaml}
+  XPTV:                 {type: http, interval: 86400, behavior: classical, format: yaml, url: https://ghp.ci/https://github.com/666OS/YYDS/raw/main/mihomo/rules/XPTV.yaml}
   fix-direct:           {type: http, interval: 86400, behavior: classical, format: yaml, url: https://ghp.ci/https://github.com/666OS/YYDS/raw/main/mihomo/rules/fix-direct.yaml}
   speedtest:            {type: http, interval: 86400, behavior: classical, format: text, url: https://ghp.ci/https://github.com/666OS/YYDS/raw/main/mihomo/rules/speedtest.list}
   category-ai-chat-!cn: {type: http, interval: 86400, behavior: domain, format: mrs, url: https://ghp.ci/https://github.com/666OS/YYDS/raw/main/mihomo/rules/category-ai-chat-!cn.mrs}
