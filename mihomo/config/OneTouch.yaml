@@ -8,8 +8,8 @@
 # ||      ╚═════╝  ╚═════╝  ╚═════╝      ||
 # ||                                     ||
 # >>=====================================<<
-# 名称: OneTouch 一键连 v1.8
-# 日期: 2024年11月21日
+# 名称: OneTouch 一键连 v1.9
+# 日期: 2024年12月4日
 # 地址: https://github.com/666OS
 # 频道: https://t.me/Pinched666
 
@@ -99,7 +99,7 @@ proxy-groups:
   - {name: 故障转移,      <<: *FallBack, proxies: [香港自动, 台湾自动, 新加坡自动, 日本自动, 韩国自动, 美国自动], icon: https://ghp.ci/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png}
   - {name: 抖快书定位,     type: select, proxies: [直连, 香港自动, 台湾自动, 新加坡自动, 日本自动, 韩国自动, 美国自动], icon: https://ghp.ci/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ip.png}
   - {name: AI平台,        <<: *SelectSG, include-all: true, icon: https://ghp.ci/https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png}
-  - {name: Speedtest测速, type: select, include-all: true, icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png}  
+  - {name: Speedtest, type: select, include-all: true, icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Speedtest.png}  
   - {name: 香港自动,      <<: *UrlTest, filter: *FilterHK, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png}
   - {name: 台湾自动,      <<: *UrlTest, filter: *FilterTW, icon: https://ghp.ci/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TW.png}
   - {name: 新加坡自动,    <<: *UrlTest, filter: *FilterSG, icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png}
@@ -126,15 +126,13 @@ rules:
   - DOMAIN-SUFFIX,apissl.ksapisrv.com,抖快书定位
   # 小红书修改IP
   - DOMAIN-SUFFIX,edith.xiaohongshu.com,抖快书定位
-  # >屏蔽QUIC
-  - AND,((DST-PORT,443),(NETWORK,UDP)),REJECT-DROP
   # 常用必备
   - DST-PORT,123,DIRECT
   - IP-CIDR,95.161.76.100/31,REJECT-DROP,no-resolve
   - RULE-SET,fix-direct,直连
   - RULE-SET,XPTV,直连
   - RULE-SET,private_ip,直连,no-resolve
-  - RULE-SET,speedtest,Speedtest测速
+  - RULE-SET,speedtest,Speedtest
   - RULE-SET,category-ai-chat-!cn,AI平台
   - RULE-SET,cn_domain,直连
   - DOMAIN-REGEX,^[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)+$,一键连
