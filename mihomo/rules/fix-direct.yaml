@@ -1,32 +1,17 @@
-# >>=====================================<<
-# ||                                     ||
-# ||      ██████╗  ██████╗  ██████╗      ||
-# ||     ██╔════╝ ██╔════╝ ██╔════╝      ||
-# ||     ███████╗ ███████╗ ███████╗      ||
-# ||     ██╔═══██╗██╔═══██╗██╔═══██╗     ||
-# ||     ╚██████╔╝╚██████╔╝╚██████╔╝     ||
-# ||      ╚═════╝  ╚═════╝  ╚═════╝      ||
-# ||                                     ||
-# >>=====================================<<
 # 名称: 直连修正
-# 日期: 2024年11月2日
 
 payload:
-
 # TV
   - DOMAIN-SUFFIX,speedtest.cn
   - DOMAIN,ottsdk.itv.video
   - DOMAIN-SUFFIX,czzyvideo.com
   - DOMAIN-SUFFIX,istoreos.com
-  
 # 公共 NTP 服务
   - DOMAIN-SUFFIX,ntp.org
   - DST-PORT,123
-  
 # 游戏下载
   - DOMAIN,gst.prod.dl.playstation.net
   - DOMAIN-SUFFIX,steamcontent.com
-
 # 常见的代理工具
   - PROCESS-NAME,v2ray
   - PROCESS-NAME,Surge
@@ -47,7 +32,6 @@ payload:
   - PROCESS-NAME,NetTransport
   - PROCESS-NAME,uTorrent
   - PROCESS-NAME,WebTorrent
-
 # 其它
   - DOMAIN-SUFFIX,mihomos.us.kg
   - DOMAIN-SUFFIX,synology.com
