@@ -17,7 +17,8 @@ payload:
   - DOMAIN-SUFFIX,speedtest.cn
   - DOMAIN,ottsdk.itv.video
   - DOMAIN-SUFFIX,czzyvideo.com
-
+  - DOMAIN-SUFFIX,istoreos.com
+  
 # 公共 NTP 服务
   - DOMAIN-SUFFIX,ntp.org
   - DST-PORT,123
