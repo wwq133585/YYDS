@@ -12,7 +12,7 @@ payload:
 # 游戏下载
   - DOMAIN,gst.prod.dl.playstation.net
   - DOMAIN-SUFFIX,steamcontent.com
-# 常见的代理工具
+# PROCESS-NAME
   - PROCESS-NAME,v2ray
   - PROCESS-NAME,Surge
   - PROCESS-NAME,ss-local
@@ -32,9 +32,19 @@ payload:
   - PROCESS-NAME,NetTransport
   - PROCESS-NAME,uTorrent
   - PROCESS-NAME,WebTorrent
-# 其它
+  - PROCESS-NAME,zerotier-one
+# DOMAIN-SUFFIX
   - DOMAIN-SUFFIX,mihomos.us.kg
   - DOMAIN-SUFFIX,synology.com
   - DOMAIN-SUFFIX,quickconnect.to
   - DOMAIN-SUFFIX,cocopilot.org
-  - PROCESS-NAME,zerotier-one
+  - DOMAIN-SUFFIX,iqiyis.com
+  - DOMAIN-SUFFIX,musicbrainz.org
+  - DOMAIN-SUFFIX,coverartarchive.org
+  - DOMAIN-SUFFIX,archive.org
+  - DOMAIN-SUFFIX,icloud.com.cn
+  - DOMAIN-SUFFIX,apple-dns.cn
+  - DOMAIN-SUFFIX,synology.com
+  - DOMAIN-SUFFIX,quickconnect.to
+  - DOMAIN-SUFFIX,cocopilot.org
+  - DOMAIN-SUFFIX,oaifree.com
