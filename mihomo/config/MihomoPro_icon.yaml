@@ -128,14 +128,14 @@ dns:
   default-nameserver: ['119.29.29.29', '180.184.1.1', '223.5.5.5']
   nameserver: ['https://doh.pub/dns-query', 'https://dns.alidns.com/dns-query']
   fake-ip-filter:
-    - "rule-set:cn_domain,private_domain,fix-direct"
-    - "*.lan"
-    - "*.local"
-    - "*.home.arpa"
-    - "+.gitv.tv"
-    - "+.docker.io"
-    - "+.miwifi.com"
-    - "+.safebrowsing.apple"
+    - 'rule-set:cn_domain,private_domain,fix-direct'
+    - '*.lan'
+    - '*.local'
+    - '*.home.arpa'
+    - '+.gitv.tv'
+    - '+.docker.io'
+    - '+.miwifi.com'
+    - '+.safebrowsing.apple'
     - Mijia Cloud
     #放行NTP服务
     - time.*.com
@@ -158,9 +158,9 @@ dns:
     - ntp5.*.com
     - ntp6.*.com
     - ntp7.*.com
-    - "*.time.edu.cn"
-    - "*.ntp.org.cn"
-    - "+.pool.ntp.org"
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - '+.pool.ntp.org'
     - time1.cloud.tencent.com
 
 # 本地自建节点组
@@ -371,6 +371,8 @@ rule-providers:
 
 # 路由
 rules:
+  # >屏蔽QUIC
+  - AND,((DST-PORT,443),(NETWORK,UDP)),REJECT-DROP
   # 常用必备
   - DST-PORT,123,DIRECT
   - IP-CIDR,95.161.76.100/31,REJECT-DROP,no-resolve
