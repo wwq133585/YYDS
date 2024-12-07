@@ -49,11 +49,19 @@ ClassicalText: &ClassicalText {type: http, interval: 86400, behavior: classical,
 ClassicalYaml: &ClassicalYaml {type: http, interval: 86400, behavior: classical, format: yaml}
 ############################################## - ⚓️ 锚点区结束 - ############################################## 
 
-# 远程订阅组
+  # 远程订阅组
 # 注意：请提供您的机场订阅链接，每个链接一行，并为每个机场命名，末尾的[A]为每个节点添加机场名称前缀，可自定义
 proxy-providers:
-  机场A: {<<: *PProviders, url: '机场订阅地址', override: {additional-prefix: '[A] '}}
-  机场B: {<<: *PProviders, url: '机场订阅地址', override: {additional-prefix: '[B] '}}
+  网速猫: {<<: *PProviders, url: 'https://a.s2cat.cc/api/v1/client/subscribe?token=47336dd2e8354d0c473e847621776ad1', override: {additional-prefix: '[W] '}}
+  早安云: {<<: *PProviders, url: 'https://artislg.com/api/v1/zaoanyun?token=3c2711a0999da9a49473cd6e18af91b7', override: {additional-prefix: '[Z] '}}
+#  NoMoreWalls: {<<: *PProviders, url: 'https://ghp.ci/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml', override: {additional-prefix: '[G] '}}
+#  魔戒: {<<: *PProviders, url: 'https://mojie0201.xn--8stx8olrwkucjq3b.com/api/v1/client/subscribe?token=7e71f58c8bf37961ddf82cb1a2e02784', override: {additional-prefix: '[M] '}}
+  CAC Apex: {<<: *PProviders, url: 'https://submit.xz61.cn:23443/api/v1/client/subscribe?token=c99140dc9ba644df32c86a740df3bb05', override: {additional-prefix: '[C] '}}
+  IKUUU: {<<: *PProviders, url: 'https://javlt.no-mad-world.club/link/9tOoXYsAxHA4MAsb?clash=4&extend=1', override: {additional-prefix: '[I] '}}
+  KEI NETWORK: {<<: *PProviders, url: 'https://d3keb6jjtp861e.cloudfront.net/api/v1/client/subscribe?token=04db94b5a4a8f7dcb22fc2cd1ac70a68', override: {additional-prefix: '[K] '}}
+  网友的: {<<: *PProviders, url: 'https://client-sub.cloudlion.top/api/v1/client/subscribe?token=9be86fd33c07b07900c7e9e0d2819ca4', override: {additional-prefix: '[H] '}}
+# 暂时不用的机场可以在最前面加上#
+# 以上内容放在keep记事＃
 
 # 全局配置
 port: 7890
