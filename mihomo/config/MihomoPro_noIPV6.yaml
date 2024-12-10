@@ -58,7 +58,6 @@ proxy-providers:
 #  魔戒: {<<: *PProviders, url: 'https://mojie0201.xn--8stx8olrwkucjq3b.com/api/v1/client/subscribe?token=7e71f58c8bf37961ddf82cb1a2e02784', override: {additional-prefix: '[M] '}}
   CAC Apex: {<<: *PProviders, url: 'https://submit.xz61.cn:23443/api/v1/client/subscribe?token=c99140dc9ba644df32c86a740df3bb05', override: {additional-prefix: '[C] '}}
   IKUUU: {<<: *PProviders, url: 'https://javlt.no-mad-world.club/link/9tOoXYsAxHA4MAsb?clash=4&extend=1', override: {additional-prefix: '[I] '}}
-  KEI NETWORK: {<<: *PProviders, url: 'https://d3keb6jjtp861e.cloudfront.net/api/v1/client/subscribe?token=04db94b5a4a8f7dcb22fc2cd1ac70a68', override: {additional-prefix: '[K] '}}
   网友的: {<<: *PProviders, url: 'https://client-sub.cloudlion.top/api/v1/client/subscribe?token=9be86fd33c07b07900c7e9e0d2819ca4', override: {additional-prefix: '[H] '}}
 # 暂时不用的机场可以在最前面加上#
 # 以上内容放在keep记事＃
