@@ -59,6 +59,7 @@ proxy-providers:
   CAC Apex: {<<: *PProviders, url: 'https://submit.xz61.cn:23443/api/v1/client/subscribe?token=c99140dc9ba644df32c86a740df3bb05', override: {additional-prefix: '[C] '}}
   IKUUU: {<<: *PProviders, url: 'https://javlt.no-mad-world.club/link/9tOoXYsAxHA4MAsb?clash=4&extend=1', override: {additional-prefix: '[I] '}}
   网友的: {<<: *PProviders, url: 'https://client-sub.cloudlion.top/api/v1/client/subscribe?token=9be86fd33c07b07900c7e9e0d2819ca4', override: {additional-prefix: '[H] '}}
+  TG大佬分享: {<<: *PProviders, url: 'https://raw.githubusercontent.com/wwq133585/Sub-Address/refs/heads/main/README?token=GHSAT0AAAAAAC2ZI7ZDM7FF2FRJIZCJHHRCZ3CMIGQ', override: {additional-prefix: '[T] '}}
 # 暂时不用的机场可以在最前面加上#
 # 以上内容放在keep记事＃
 
