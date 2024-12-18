@@ -59,7 +59,7 @@ proxy-providers:
   CAC Apex: {<<: *PProviders, url: 'https://submit.xz61.cn:23443/api/v1/client/subscribe?token=c99140dc9ba644df32c86a740df3bb05', override: {additional-prefix: '[C] '}}
   IKUUU: {<<: *PProviders, url: 'https://javlt.no-mad-world.club/link/9tOoXYsAxHA4MAsb?clash=4&extend=1', override: {additional-prefix: '[I] '}}
   网友的: {<<: *PProviders, url: 'https://client-sub.cloudlion.top/api/v1/client/subscribe?token=9be86fd33c07b07900c7e9e0d2819ca4', override: {additional-prefix: '[H] '}}
-  TG大佬分享: {<<: *PProviders, url: 'https://sub.xeton.dev/sub?target=clash&new_name=true&url=hysteria2%3A%2F%2FTblOfqR1CcLfXBCNwUYtmtI6uSc%40140.245.51.121%3A12365%2F%3Finsecure%3D1%26sni%3Dbing.com%23SG-%E6%96%B0%E5%8A%A0%E5%9D%A1%40TG%E5%88%86%E4%BA%AB&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini&filename=TG%E5%88%86%E4%BA%AB&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false', override: {additional-prefix: '[T] '}}
+  TG大佬分享: {<<: *PProviders, url: 'https://sub.xeton.dev/sub?target=clash&new_name=true&url=hysteria2%3A%2F%2FTblOfqR1CcLfXBCNwUYtmtI6uSc%40140.245.51.121%3A12365%2F%3Finsecure%3D1%26sni%3Dbing.com%23SG-%E6%96%B0%E5%8A%A0%E5%9D%A1%40TG%E5%88%86%E4%BA%AB&insert=false&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false', override: {additional-prefix: '[T] '}}
 # 暂时不用的机场可以在最前面加上#
 # 以上内容放在keep记事＃
 
