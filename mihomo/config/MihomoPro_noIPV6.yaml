@@ -53,7 +53,6 @@ ClassicalYaml: &ClassicalYaml {type: http, interval: 86400, behavior: classical,
 # 注意：请提供您的机场订阅链接，每个链接一行，并为每个机场命名，末尾的[A]为每个节点添加机场名称前缀，可自定义
 proxy-providers:
   网速猫: {<<: *PProviders, url: 'https://a.s2cat.cc/api/v1/client/subscribe?token=47336dd2e8354d0c473e847621776ad1', override: {additional-prefix: '[W] '}}
-  早安云: {<<: *PProviders, url: 'https://artislg.com/api/v1/zaoanyun?token=3c2711a0999da9a49473cd6e18af91b7', override: {additional-prefix: '[Z] '}}
 #  NoMoreWalls: {<<: *PProviders, url: 'https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.meta.yml', override: {additional-prefix: '[G] '}}
 #  魔戒: {<<: *PProviders, url: 'https://mojie0201.xn--8stx8olrwkucjq3b.com/api/v1/client/subscribe?token=7e71f58c8bf37961ddf82cb1a2e02784', override: {additional-prefix: '[M] '}}
   CAC Apex: {<<: *PProviders, url: 'https://submit.xz61.cn:23443/api/v1/client/subscribe?token=c99140dc9ba644df32c86a740df3bb05', override: {additional-prefix: '[C] '}}
