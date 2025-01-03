@@ -57,7 +57,6 @@ proxy-providers:
 #  魔戒: {<<: *PProviders, url: 'https://mojie0201.xn--8stx8olrwkucjq3b.com/api/v1/client/subscribe?token=7e71f58c8bf37961ddf82cb1a2e02784', override: {additional-prefix: '[M] '}}
   CAC Apex: {<<: *PProviders, url: 'https://submit.xz61.cn:23443/api/v1/client/subscribe?token=c99140dc9ba644df32c86a740df3bb05', override: {additional-prefix: '[C] '}}
   IKUUU: {<<: *PProviders, url: 'https://javlt.no-mad-world.club/link/9tOoXYsAxHA4MAsb?clash=4&extend=1', override: {additional-prefix: '[I] '}}
-  网友的: {<<: *PProviders, url: 'https://client-sub.cloudlion.top/api/v1/client/subscribe?token=9be86fd33c07b07900c7e9e0d2819ca4', override: {additional-prefix: '[H] '}}
 # 暂时不用的机场可以在最前面加上#
 # 以上内容放在keep记事＃
 
@@ -176,7 +175,7 @@ proxies:
 # 策略组 
 proxy-groups:
   - {name: 默认代理, <<: *SelectFB, icon: https://ghp.ci/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Static.png}
-  - {name: 故障转移, <<: *FallBack, proxies: [香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 全球手动, 冷门自选, 直连], icon: https://ghp.ci/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png}
+  - {name: 故障转移, <<: *FallBack, proxies: [日本策略, 香港策略, 美国策略, 台湾策略, 韩国策略, 新加坡策略, 欧盟策略, 全球手动, 冷门自选, 直连], icon: https://ghp.ci/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ULB.png}
   - {name: 漏网之鱼, type: select, proxies: [默认代理, 直连], icon: https://ghp.ci/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
   - {name: 全球手动, type: select, include-all: true, filter: *FilterAll, icon: https://ghp.ci/https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Clubhouse.png}
   - {name: 冷门自选, type: select, include-all: true, filter: *FilterOther, icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/XD.png}
